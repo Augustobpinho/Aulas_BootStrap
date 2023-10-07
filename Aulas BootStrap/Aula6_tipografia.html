@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+
+    <title>Tipografia</title>
+</head>
+
+<body>
+    <h1>Exemplo 1 - Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum necessitatibus rerum architecto quibusdam
+        repellat nobis iste. Omnis quos animi enim. Ex qui officia molestiae praesentium dolorum natus repudiandae
+        soluta accusamus.</p>
+    <hr>
+    <div class="container">
+        <!--Criando níveis de título de tamanhos H de 1 ao 6 automático (div.class>h${h$ - título $}*a quantidade de repetição dos título hierárquicamente)-->
+        <h1>Exemplo 2 - Título</h1>
+        <h1>h1 - Título de Nível 1</h1>
+        <h2>h2 - Título de Nível 2</h2>
+        <h3>h3 - Título de Nível 3</h3>
+        <h4>h4 - Título de Nível 4</h4>
+        <h5>h5 - Título de Nível 5</h5>
+        <h6>h6 - Título de Nível 6</h6>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- Criando níveis de Classe de título automático que são parágrafos com aspectos de títulos, usando 
+            a classe de títulos(div.class>p.h$ Classe de Título $}* pela quantidade)-->
+        <h1>Exemplo 3 - Título</h1>
+        <p class="h1">.h1 - Classe de Título de Nível 6 1</p>
+        <p class="h2">.h2 - Classe de Título de Nível 6 2</p>
+        <p class="h3">.h3 - Classe de Título de Nível 6 3</p>
+        <p class="h4">.h4 - Classe de Título de Nível 6 4</p>
+        <p class="h5">.h5 - Classe de Título de Nível 6 5</p>
+        <p class="h6">.h6 - Classe de Título de Nível 6 6</p>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- Criando níveis de Classe de título automático (div.class>h1.display-${Display $}* pela quantidade)-->
+        <h1>Exemplo 4 - Título</h1>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Exemplo 5 - Textos</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam velit quam labore, ab
+            similique quos sed
+            explicabo fugit sit non doloribus quo recusandae omnis, eos maxime mollitia? Aspernatur, id provident!</p>
+
+        <P>Texto em <mark>Marcado</mark></P>
+        <p>Texto com aspecto de <del>excluído</del></p>
+        <P>Texto <s>Riscado</s></P>
+        <p>Texto <ins>recém-inserido</ins></p>
+        <p>Texto <u>sublinhado</u></p>
+        <p>Texto <small>pequeno</small></p>
+        <p>Texto <strong>Encorpado</strong></p>
+        <p>Texto <em>Itálico</em></p>
+        <hr>
+        <h1>Exemplo 6 - Abreciações</h1>
+        <abbr title="Mongo, Express, React, Node">MERN</abbr>
+        <hr>
+        <h1>Exemplo 7 - Citações longas</h1>
+        <figure class="text-end">
+        <blockquote class="blockquote" cite="Augusto Pinho"><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam,
+            exercitationem atque, impedit a in soluta unde hic quod sequi ratione earum rerum ullam! Earum fuga minus
+            debitis. Quae, id.</P>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            <cite>Augusto Pinho</cite>, Grande desenvolvedor Full-Stack
+        </figcaption>
+        </figure>
+        <hr>
+        <h1>Exemplo 8 - Formatação de Listas</h1>
+        <!-- Criando listas automáticas (ul.li>{Conteúdo $}* pela quantidade)-->
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+        <hr>
+        <h1>Exemplo 9 - Lista sem Formatação</h1>
+        <!-- Criando listas automáticas sem formatação(ul.li>{Conteúdo $}* pela quantidade)-->
+        <ul class="list-unstyled">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+        <hr>
+        <h1>Exemplo 10 - Listas formatadas uma do lado da outra</h1>
+        <!-- Criando listas automáticas na mesma linha utilizando o comando list-inline
+            (ul.list-inline>li.list-inline-item{Conteúdo $}* pela quantidade)-->
+        <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+            <li class="list-inline-item">Item 4</li>
+            <li class="list-inline-item">Item 5</li>
+            <li class="list-inline-item">Item 6</li>
+        </ul>
+        <hr>
+        <h1>Exemplo 11 - Listas de descrição formatadas</h1>
+        <!-- Criando listas automáticas de definições/descirções 
+        (dl>(dt que é o termo){Conteúdo $}++dd{Conteúdo $}* pela quantidade)-->
+        <dl>
+            <dt>Termo 1</dt>
+            <dd>Descrição do termo1</dd>
+            <dt>Termo 2</dt>
+            <dd>Descrição do termo2</dd>
+            <dt>Termo 3</dt>
+            <dd>Descrição do termo3</dd>
+            <dt>Termo 4</dt>
+            <dd>Descrição do termo4</dd>
+            <dt>Termo 5</dt>
+            <dd>Descrição do termo5</dd>
+            <dt>Termo 6</dt>
+            <dd>Descrição do termo6</dd>
+        </dl>
+
+    </div>
+
+
+</body>
+
+</html>
